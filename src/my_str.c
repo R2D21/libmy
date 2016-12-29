@@ -16,7 +16,7 @@ char	*my_strcpy(char *str, char *dest)
 
   i = 0;
   if (str == NULL || *str == '\0')
-    printf("error\n");
+    my_putstr_error("[MY_STR:19] Error: str is NULL or empty.\n");
   else
     {
       while (str[i] != '\0')
@@ -40,3 +40,4 @@ int	my_strcmp(char *s1, char *s2)
   else
     return (-1);
 }
+

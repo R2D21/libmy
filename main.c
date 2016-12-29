@@ -4,13 +4,15 @@ int	main()
 {
   char *dest = malloc(4096 * sizeof(char));
   char	**tab = NULL;
-
+  char	**tab1 = NULL;
+  
   if ((tab = malloc_tab(tab)) == NULL)
     return (1);
-  else if ((my_strcpy("Hell44", tab[0])) == NULL)
+  else if ((tab1 = malloc_tab(tab)) == NULL)
     return (1);
+  tab = my_wordtab("bonjour;aurevoir\0", ';');
   my_puttab(tab);
-  my_putchar('\n');
-  printf("%i\n", my_strcmp("Hell44", dest));
+  tab1 = my_wordtab("pipi;caca", ',');
+  my_puttab(tab1);
   return (0);
 }

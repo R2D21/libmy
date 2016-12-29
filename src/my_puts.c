@@ -23,6 +23,7 @@ void	my_puttab(char **tab)
   while (*tab[i] != '\0')
     {
       write(1, tab[i], my_strlen(tab[i]));
+      my_putchar('\n');
       i++;
     }
 }

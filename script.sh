@@ -1,5 +1,6 @@
 rm *.*~
 rm src/*.*~
+rm a.out
 git add --all
 read $1
 
