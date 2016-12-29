@@ -1,0 +1,11 @@
+#ifndef _MY_H_
+#define _MY_H_
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int	my_strlen(char *str);
+
+char	*my_strcpy(char *str, char *dest);
+
+#endif
