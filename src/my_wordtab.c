@@ -1,5 +1,7 @@
 #include "../includes/my.h"
 
+static int count1 = 0;
+
 int	count_word(char *str, char c)
 {
   int	i;

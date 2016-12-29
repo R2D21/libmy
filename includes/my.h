@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-static int count1 = 0;
+//static int count1 = 0;
 
 int	my_strlen(char *str);
 int	my_strcmp(char *s1, char *s2);

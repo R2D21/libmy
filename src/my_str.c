@@ -20,7 +20,10 @@ char	*my_strcpy(char *str, char *dest)
   else
     {
       while (str[i] != '\0')
-	dest[i] = str[i++];
+	{
+	  dest[i] = str[i];
+	  i = i + 1;
+	}
       return (dest);
     }
   return (NULL);
