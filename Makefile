@@ -9,7 +9,8 @@ CFLAGS	=	-g3 -ggdb -W -Wall -Werror -ansi -pedantic -std=gnu99
 SRCS	=	src/tab.c \
 		src/my_puts.c \
 		src/my_wordtab.c \
-		src/my_str.c 
+		src/my_str.c \
+		src/my_list.c \
 
 OBJS	=	$(SRCS:.c=.o)
 
@@ -21,6 +22,7 @@ $(NAME)	:	$(OBJS)
 
 		ar r $(NAME) $(OBJS)
 		ranlib $(NAME)
+		sudo cp bin/libmy.a /usr/lib/
 
 clean	:
 
